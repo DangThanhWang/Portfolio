@@ -16,9 +16,15 @@ export default function Navbar() {
   }, [])
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+    const loco = (window as any).__locomotive
+    if (loco) {
+      loco.scrollTo(`#${sectionId}`)
+    } else {
+      // fallback nếu Locomotive chưa init
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
     }
   }
 
@@ -29,7 +35,6 @@ export default function Navbar() {
           <div className="logo">
             <span className="logo-text">DTQ</span>
           </div>
-          
           <ul className="nav-links">
             <li><button onClick={() => scrollToSection('hero')}>Home</button></li>
             <li><button onClick={() => scrollToSection('about')}>About</button></li>

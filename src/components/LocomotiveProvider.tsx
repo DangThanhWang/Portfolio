@@ -21,6 +21,9 @@ export default function LocomotiveProvider({ children }: LocomotiveProviderProps
         multiplier: 1,
       })
 
+      // Gán instance global
+      ;(window as any).__locomotive = locoInstance
+
       // Gọi update() sau khi khởi tạo
       requestAnimationFrame(() => {
         locoInstance?.update()
