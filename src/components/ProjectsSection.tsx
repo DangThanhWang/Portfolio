@@ -22,7 +22,7 @@ export default function ProjectsSection() {
     },
     {
       id: 3,
-      title: "AI-Powered Portfolio Website",
+      title: "Portfolio Website",
       description: "Modern portfolio website built with Next.js 14, featuring smooth animations and responsive design.",
       tech: ["Next.js", "TypeScript", "GSAP", "SCSS"],
       link: "#",

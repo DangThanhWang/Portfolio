@@ -31,12 +31,12 @@ export default function AboutSection() {
                 <span className="stat-number">3.79</span>
                 <span className="stat-label">GPA</span>
               </div>
-              <div className="stat">
+              {/* <div className="stat">
                 <span className="stat-number">2+</span>
                 <span className="stat-label">Years Experience</span>
-              </div>
+              </div> */}
               <div className="stat">
-                <span className="stat-number">10+</span>
+                <span className="stat-number">5+</span>
                 <span className="stat-label">Projects Completed</span>
               </div>
             </div>
