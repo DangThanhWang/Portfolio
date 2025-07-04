@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import emailjs from 'emailjs-com'
 import '../styles/sections.scss'
 
 export default function ContactSection() {
@@ -19,10 +20,27 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! I will get back to you soon.')
-    setFormData({ name: '', email: '', message: '' })
+
+    emailjs.send(
+      'service_y5elpxf', // Thay bằng Service ID
+      'template_lg7cn0t', // Thay bằng Template ID
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.name + " " + formData.email + " Message: " + formData.message,
+      },
+      'wqh2Km07HkynQJ1hB' // Thay bằng Public Key
+    ).then(
+      (result) => {
+        console.log('SUCCESS!', result.text)
+        alert('Thank you! Your message has been sent.')
+        setFormData({ name: '', email: '', message: '' })
+      },
+      (error) => {
+        console.log('FAILED...', error.text)
+        alert('Something went wrong. Please try again.')
+      }
+    )
   }
 
   return (

@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="container">
         <div className="navbar-content">
           <div className="logo">
-            <span className="logo-text">DTQ</span>
+            <span className="logo-text">DQ</span>
           </div>
           <ul className="nav-links">
             <li><button onClick={() => scrollToSection('hero')}>Home</button></li>
