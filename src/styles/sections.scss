@@ -227,6 +227,18 @@ $transition: all 0.3s ease;
   }
   
   .about-text {
+    .avatar {
+      width: 200px;           // hoặc kích thước bạn muốn
+      height: 200px;
+      border-radius: 50%;     // bo tròn hình tròn
+      object-fit: cover;      // ảnh không méo
+      border: 3px solid #00fff7;  // viền xanh neon matching với accent
+      box-shadow: 0 0 20px rgba(0, 255, 247, 0.4); // ánh sáng neon
+      margin-bottom: 1.5rem;  // khoảng cách dưới
+      margin-left: 1rem;  // khoảng cách trái
+      box-shadow: 0 0 10px rgba(0, 255, 247, 0.2);
+    }
+
     p {
       font-size: 1.1rem;
       line-height: 1.8;

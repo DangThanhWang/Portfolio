@@ -27,6 +27,30 @@ export default function ProjectsSection() {
       tech: ["Next.js", "TypeScript", "GSAP", "SCSS"],
       link: "#",
       image: "/images/project3.jpg"
+    },
+    {
+      id: 4,
+      title: "StarUs Game - 2D Pacman-inspired Game",
+      description: "Developed complete 2D game with OOP architecture, AI pathfinding algorithms for ghost enemies, collision detection system, and modular menu management with multiple difficulty levels.",
+      tech: ["C++", "SDL2", "OOP", "AI Pathfinding", "Game Development"],
+      link: "https://github.com/DangThanhWang/StarUs_Game",
+      image: "/images/starus-game.jpg"
+    },
+    {
+      id: 5,
+      title: "EDUET - English Learning Dictionary Application",
+      description: "Comprehensive English learning application with dictionary management, API integrations (Google Translate, Speech Recognition, Grammar Checker), mini-games (Snake, Hangman), IELTS listening tests, and AI chatbot assistant using Firebase backend.",
+      tech: ["Java", "JavaFX", "Firebase/Firestore", "Google APIs", "Multi-threading", "OOP Design"],
+      link: "https://github.com/snozywolf59/OOP-Project",
+      image: "/images/eduet-app.jpg"
+    },
+    {
+      id: 6,
+      title: "Q-Airline Flight Booking System",
+      description: "Full-stack airline booking platform with React frontend and Node.js backend. Features comprehensive flight search, seat selection, payment processing, user authentication, and robust admin management system with real-time statistics and flight operations control.",
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Tailwind CSS", "Chart.js", "Framer Motion", "bcrypt", "Cookie-parser"],
+      link: "https://github.com/TranHauNam/Q-Airline",
+      image: "/images/q-airline.jpg"
     }
   ]
 

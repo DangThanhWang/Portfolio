@@ -13,6 +13,7 @@ export default function AboutSection() {
         
         <div className="about-content">
           <div className="about-text fade-in">
+            <img src="/images/avatar.jpg" alt="My Avatar" className="avatar" />
             <p>
               I'm a dedicated AI Engineer Intern currently pursuing Information Technology 
               at VNU University of Engineering and Technology. With a strong foundation in 
