@@ -30,7 +30,7 @@ export default function ContactSection() {
       <div className="container">
         <div className="section-header fade-in">
           <h2 className="section-title">Get In Touch</h2>
-          <p className="section-subtitle">Let's work together on your next project</p>
+          <p className="section-subtitle">Let&apos;s work together on your next project</p>
         </div>
         
         <div className="contact-content">
