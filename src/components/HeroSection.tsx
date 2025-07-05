@@ -4,9 +4,14 @@ import '../styles/sections.scss'
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+    const loco = (window as any).__locomotive
+    if (loco) {
+      loco.scrollTo(`#${sectionId}`)
+    } else {
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
     }
   }
 
